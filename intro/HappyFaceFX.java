@@ -9,7 +9,6 @@ import javafx.scene.shape.ArcType;
 import javafx.stage.Stage;
 
 
-
 /**
  *
  * @author fgailly
