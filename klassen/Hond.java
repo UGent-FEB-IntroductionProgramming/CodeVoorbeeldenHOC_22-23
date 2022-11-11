@@ -1,7 +1,43 @@
 public class Hond {
-    public String naam;
-    public String ras;
-    public int leeftijd;
+    private String naam;
+    private String ras;
+    private int leeftijd;
+
+    public Hond(String naam, String ras, int leeftijd){
+        this.naam = naam;
+        this.ras = ras;
+        this.leeftijd = leeftijd;
+    }
+
+    public Hond(String naam) {
+        this.naam = naam;
+        this.ras ="Niet geweten";
+        this.leeftijd = -1;
+    }
+
+    public String getNaam(){
+        return naam;
+    }
+
+    public String getRas(){
+        return ras;
+    }
+
+    public int getLeeftijd() {
+        return leeftijd;
+    }
+
+    public void setNaam(String naam){
+        this.naam = naam;
+    }
+
+    public void setLeeftijd(int leeftijd) {
+        this.leeftijd = leeftijd;
+    }
+
+    public void setRas(String ras) {
+        this.ras = ras;
+    }
 
     public void writeOutput(){
         System.out.println("Naam hond:" + naam);
