@@ -1,12 +1,25 @@
+package hond;
+
 public class Hond {
     private String naam;
     private String ras;
     private int leeftijd;
 
+    public static int getAantalHonden() {
+        return aantalHonden;
+    }
+
+    public static void setAantalHonden(int aantalHonden) {
+        Hond.aantalHonden = aantalHonden;
+    }
+
+    private static int aantalHonden = 0;
+
     public Hond(String naam, String ras, int leeftijd){
         this.naam = naam;
         this.ras = ras;
         this.leeftijd = leeftijd;
+        aantalHonden++;
     }
 
     public Hond(String naam) {
@@ -46,6 +59,14 @@ public class Hond {
         System.out.println(("Leeftijd hond in mensenjaren: " + geefLeeftijdInMensenJaren()));
     }
 
+    public static void writeOutput2(Hond hond){
+        System.out.println("Naam hond:" + hond.naam);
+        System.out.println(("Ras hond: " + hond.ras));
+        System.out.println("Leeftijd hond: " + hond.leeftijd);
+        System.out.println(("Leeftijd hond in mensenjaren: " + hond.geefLeeftijdInMensenJaren()));
+    }
+
+
     public int geefLeeftijdInMensenJaren(){
         //int leeftijdMensen = 0;
         if(leeftijd <= 2) {
@@ -58,4 +79,17 @@ public class Hond {
         }
 
     }
+
+    public static void main(String[] args) {
+
+
+        Hond jackie = new Hond("Jackie", "Labradoedel", 3); //constructor
+        jackie.writeOutput();
+        writeOutput2(jackie);
+
+        Hond odette = new Hond("odette", "vizsla", 2);
+        System.out.println("Aantal honden:" + Hond.getAantalHonden());
+
+    }
+
 }

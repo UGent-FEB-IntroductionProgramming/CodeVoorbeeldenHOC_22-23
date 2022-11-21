@@ -1,5 +1,8 @@
+
+
 public class DemoDiersoort {
     public static void main(String[] args) {
+
         Diersoort soort1 = new Diersoort("Klingon Ex",1000, 10);
         Diersoort soort2 = new Diersoort("Klingon Ex",1000, 10);
         //soort1.readInput();

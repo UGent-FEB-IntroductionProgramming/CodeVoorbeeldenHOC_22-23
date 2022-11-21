@@ -1,3 +1,5 @@
+package hond;
+
 public class DemoHond {
     public static void main(String[] args) {
         Hond jackie = new Hond("Jackie", "Labradoedel", 3); //constructor
@@ -11,6 +13,8 @@ public class DemoHond {
         int leeftijd =  jackie.geefLeeftijdInMensenJaren();
         jackie.writeOutput();
 
+
+
         Hond odette = new Hond("odette", "vizsla", 2);
         Hond bob = new Hond("Bob");
         //odette.naam = "odette";
@@ -20,6 +24,7 @@ public class DemoHond {
         //odette.leeftijd = 2;
         //odette.setLeeftijd(2);
         odette.writeOutput();
+        System.out.println("Aantal honden:" + Hond.getAantalHonden());
 
     }
 }
