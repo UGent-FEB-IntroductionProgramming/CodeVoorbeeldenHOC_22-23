@@ -82,12 +82,13 @@ public class Hond {
 
     public static void main(String[] args) {
 
-
+        //Hond jackie = new Hond();
+        //jackie.naam = "Jackie";
         Hond jackie = new Hond("Jackie", "Labradoedel", 3); //constructor
         jackie.writeOutput();
         writeOutput2(jackie);
 
-        Hond odette = new Hond("odette", "vizsla", 2);
+        //Hond odette = new Hond("odette", "vizsla", 2);
         System.out.println("Aantal honden:" + Hond.getAantalHonden());
 
     }
